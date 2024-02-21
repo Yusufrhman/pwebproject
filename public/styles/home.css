@@ -1,0 +1,113 @@
+#main-landing {
+  margin: 4.5rem auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+#main-landing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 90%;
+}
+#main-landing-content-attribute {
+  font-size: 1rem;
+  padding: 0.25rem 0.6rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+#main-landing-content-attribute span {
+  color: var(--warna-text-biru);
+}
+#main-landing-content-text {
+  font-size: 1.25rem;
+  color: var(--warna-text-abu);
+  width: 60%;
+}
+#main-landing-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+#impact {
+  margin: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+#impact h2 {
+  font-size: 2rem;
+  color: var(--warna-text-abu);
+}
+#impact-list {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.impact-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  box-shadow: 0px 0px 10px rgba(25, 25, 25, 0.3);
+  border-radius: 8px;
+  gap: 1rem;
+  flex: 1 0 20rem;
+}
+.impact-list-item h3 {
+  font-size: 1.75rem;
+}
+.impact-list-item h3,
+.impact-list-item p {
+  margin: 0;
+}
+#aduan-terbaru {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+#aduan-terbaru-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+}
+#aduan-terbaru-list-item {
+  flex: 1 0 20rem;
+  height: 10rem;
+  width: 20rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(25, 25, 25, 0.3);
+}
+@media (max-width: 54rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  #main-landing-content-text {
+    font-size: 1rem;
+  }
+  #impact h2 {
+    font-size: 1.75rem;
+  }
+}

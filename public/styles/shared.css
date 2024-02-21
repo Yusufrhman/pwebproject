@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Libre Baskerville", serif;
+  --warna-text-hitam: #212529;
+  --warna-text-abu: #343a40;
+  --warna-text-biru: #1864ab;
+  --warna-background: #ffffff;
+  --warna-border: #e3e5e7;
+  --warna-border2: #ccced0;
+}
+body {
+  margin: 0;
+}
+header {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  box-shadow: 0px 0px 25px rgba(25, 25, 25, 0.3);
+  border-radius: 8px;
+  height: 5rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--warna-background);
+}
+#logo {
+  font-size: 1.25rem;
+}
+#nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.nav-list-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+.nav-list-item:hover {
+  text-decoration: underline;
+}
+#header-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+}
+.container {
+  display: none;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--warna-text-hitam);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+footer {
+  margin-top: 5rem;
+  height: 15rem;
+  width: 100%;
+  background-color: var(--warna-text-abu);
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  background-color: var(--warna-border);
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: var(--warna-border2);
+}
+.reverse-btn {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--warna-border2);
+  border-radius: 4px;
+  transition: all 0.1s;
+}
+.reverse-btn:hover {
+  border: 2px solid var(--warna-border2);
+  /* background-color: rgb(247, 247, 247); */
+}
+.link-btn {
+  color: var(--warna-text-biru);
+}
+.link-btn:hover {
+  color: var(--warna-text-abu);
+}
+a {
+  text-decoration: none;
+  color: var(--warna-text-hitam);
+}
+li {
+  list-style: none;
+}
+
+@media (max-width: 54rem) {
+  #nav-list {
+    display: none;
+  }
+  .container {
+    display: inline-block;
+  }
+}
